@@ -1,0 +1,49 @@
+.container{
+    max-width: 1270px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.header{
+    & .header_block{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        & .phone{
+            font-weight: bold;
+            font-size: 30px;
+            display: flex;
+            align-self: flex-end;
+            & a{
+                text-decoration: none;
+                color: #000;
+            }
+            & .fa-phone{
+                color: #25D366;
+            }
+        }
+        & .contact_list{
+            display: flex;
+            align-self: flex-end;
+            & .contact_wrapper{
+                display: flex;
+                list-style-type: none;
+                align-items: center;
+                justify-content: center;
+                & li{
+                    font-size: 50px;
+                    text-align: center;
+                    justify-content: center;
+                    letter-spacing: 30px;
+                    & .fa-viber{
+                        color: #7360f2;
+                    }
+                    & .fa-telegram{
+                        color: #229ED9;
+                    }
+                    & .fa-whatsapp{
+                        color: #25D366;
+                    }
+                } 
+            }
+        }
+    }
+}
