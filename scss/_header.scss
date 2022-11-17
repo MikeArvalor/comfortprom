@@ -3,26 +3,70 @@
     padding: 0 20px;
     margin: 0 auto;
 }
-.header{
+body{
+    background: url(../img/fon_2.png) no-repeat center center fixed;
+    background-size: cover;
+}
+.header{ border-bottom: 1px solid rgba(255,255,255,0.4);
     & .header_block{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        & .phone{
-            font-weight: bold;
-            font-size: 30px;
-            display: flex;
-            align-self: flex-end;
-            & a{
-                text-decoration: none;
-                color: #000;
+        grid-template-columns: 0.2fr 1.5fr 0.1fr;
+        & .links_perfocrepesh{
+            & .list_of_links_perfocrepesh{
+                margin-top: 40px;
+                display: flex;  align-items: flex-end;
+                justify-content: space-between;
+                & li{
+                    list-style-type: none;
+                   & a{
+                    cursor: pointer;
+                    background: none;
+                    border: none;
+                    color: #000;
+                    font-size: 20px;
+                    text-decoration: none;
+               
+                    color: #140605;
+                   }
+                    & button{
+                        cursor: pointer;
+                        background: none;
+                        border: none;
+                        color: #000;
+                        font-size: 20px;
+                        
+                        color: #140605;
+                    }
+                }
             }
-            & .fa-phone{
-                color: #25D366;
+        }
+        & .links{
+            & .list_of_links{
+                margin-top: 40px;
+                display: flex;  align-items: flex-end;
+                justify-content: space-between;
+                & li{
+                    list-style-type: none;
+                   & a{
+                    cursor: pointer;
+                    background: none;
+                    border: none;
+                    color: #fff;
+                    font-size: 20px;
+                    text-decoration: none;
+                   }
+                    & button{
+                        cursor: pointer;
+                        background: none;
+                        border: none;
+                        color: #fff;
+                        font-size: 20px;
+                    }
+                }
             }
         }
         & .contact_list{
             display: flex;
-            align-self: flex-end;
             & .contact_wrapper{
                 display: flex;
                 list-style-type: none;

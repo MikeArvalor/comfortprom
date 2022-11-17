@@ -4,8 +4,7 @@ body{
 
 }
 .wrapper{  
-    background: url(../img/fon_2.png) no-repeat center center fixed;
-    background-size: cover;
+    
     width: 100%;
     & .wrapper_additional{
 
@@ -15,7 +14,7 @@ body{
             grid-template-columns: 1.5fr 1fr;
             margin-bottom: 60px;
             & .left_block{
-                margin-top: 50px;
+           
             & .title{
                 color: #fff;
                 font-size: 46px;
@@ -40,33 +39,9 @@ body{
             }
             }
             & .right_block{
-                background-color: rgba(255,255,255,.7);
-                border: 0.4rem solid #ede623;
-                margin-top: 50px;
+               
            
-                & .title_text{
-                    font-size: 34px;
-                    font-weight: bold;
-                    text-align: center;
-                    
-                }
-                & .contact_block{
-                    padding-left: 20px;
-                    font-size: 20px;
-                    line-height: 50px;
-                    
-                    & li{
-                        list-style-type: none;
-                        & i{
-                        color: #4555b9;
-                        }
-                        & a{
-                            text-decoration: none;
-                            color: #000;
-                           
-                        }
-                    }
-                }
+              
             }
         }
         & .block_of_services{
