@@ -1,0 +1,256 @@
+<section>
+        <div class="contact_block">
+            <div class="container">
+                <div class="contact_wrapper">
+                    <div class="contact_link">
+                        <p><a href="">Главная </a>  <span>></span> Перфорированный лист</p>
+                    </div>
+                    <div class="contact_additional_perfocrepesh">
+                        <div class="contact_title_perfocrepesh">
+                            <p class="text_top">Наши услуги</p>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="wrapper_perfocrepesh">
+                     <div class="statistics">
+                                <div class="statistics__allrows statistics__row1 statistics__pc">
+                                    <div class="statistics__allcolumns statistics__row1-allcolumns">
+                                        <div class="statistics__allcolumns-alltitles">
+                                            Листы любых размеров 
+                                        </div>
+                                        <div class="statistics__allcolumns-text statistics__allcolumns-text-column1">Предлагаем перфорированные листы различных типов и размеров</div>
+                                    </div>
+                                    <div class="statistics__allcolumns  statistics__row1-allcolumns">
+                                        <div class="statistics__allcolumns-alltitles">
+                                            Металл по Вашим требованиям
+                                        </div>
+                                        <div class="statistics__allcolumns-text">Оцинкованная сталь, нержавеющая сталь, кортеновская сталь</div>
+                                    </div>
+                                    <div class="statistics__allcolumns statistics__allcolumns-column3 statistics__row1-allcolumns">
+                                        <div class="statistics__allcolumns-alltitles">
+                                            Покраска и полимерная обработка
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                        
+                                <div class="statistics__allrows statistics__pc">
+                                    <div class="statistics__allcolumns">
+                                        <div class="statistics__allcolumns-alltitles">
+                                            от 0.5 мм до 6 мм
+                                        </div>
+                                        <div class="statistics__allcolumns-text statistics__allcolumns-text-column1">Толщина металла</div>
+                                    </div>
+                                    <div class="statistics__allcolumns">
+                                        <div class="statistics__allcolumns-alltitles">
+                                        от 1 мм до 10 мм 
+                                        </div>
+                                        <div class="statistics__allcolumns-text">Диаметр отверстий</div>
+                                    </div>
+                                    <div class="statistics__allcolumns statistics__allcolumns-column3">
+                                        <div class="statistics__allcolumns-alltitles">
+                                            от 2 мм до 15 мм
+                                        </div>
+                                        <div class="statistics__allcolumns-text">Шаг(расстояние) между отверстиями</div>
+                                    </div>
+                                </div>  
+                        
+                                <div class="statistics__allrows statistics__pc">
+                                    <div class="statistics__allcolumns">
+                                        <div class="statistics__allcolumns-alltitles">
+                                            Выполним перфорацию по Вашим чертежам
+                                        </div>
+                                        <!-- <div class="statistics__allcolumns-text statistics__allcolumns-text-column1">Размер поля</div> -->
+                                    </div>
+                                    <div class="statistics__allcolumns">
+                                        <div class="statistics__allcolumns-alltitles">
+                                            Разработаем проект в соответсвии с тех.заданием
+                                        </div>
+                                        <!-- <div class="statistics__allcolumns-text">Защита трибун козырьком</div> -->
+                                    </div>
+                                    <div class="statistics__allcolumns statistics__allcolumns-column3">
+                                        <div class="statistics__allcolumns-alltitles">
+                                            Индивидуальный подход
+                                        </div>
+                                        <div class="statistics__allcolumns-text">Создадим индивидуальный проект по вашим требованиям</div>
+                                    </div>
+                                </div>                         
+                            </div>
+                     </div>
+                 </div>
+            </div>
+         </div>
+    </section>
+    <section>
+        .statistics {
+            text-align: center;
+            margin-bottom: 136px;
+            &__title {
+              text-transform: uppercase;
+              margin-bottom: 41px;
+              width: 716px;
+              font-family: Roboto Condensed;
+              font-style: italic;
+              font-weight: bold;
+              font-size: 30px;
+              line-height: 47px;
+              font-variant: small-caps;
+            }
+          
+            &__allrows {
+              display: flex;
+            }
+            &__mobile {
+              display: none;
+            }
+            
+            &__allcolumns {
+              width: 33.33333%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              //justify-content: center;
+              padding: 50px 0;
+              border-right: 1px solid rgba(160, 153, 153, 0.5);
+              border-bottom: 1px solid rgba(160, 153, 153, 0.5);
+              &-last {
+                border-bottom: none;
+              }
+              &-alltitles {
+              max-width: 90%;
+              margin-bottom: 17px;
+              font-family: Roboto Condensed;
+              font-style: italic;
+              font-weight: bold;
+              font-size: 40px;
+              line-height: 47px;
+              color: #A23228;
+                span.gray {      
+              font-family: Roboto Condensed;
+              color: #A09999;
+              font-style: italic;
+              font-size: 24px;
+              line-height: 110%;
+              color: #A09999;
+                }
+              }
+              &-text {
+                text-align: center;
+                max-width: 90%;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 28px;
+                color: #A09999;
+                &-column1 {
+                  text-align: left;
+                }
+              }
+            }
+            &__row1 {
+              &-allcolumns {
+                padding-top: 0;
+              }
+            }
+            &__allcolumns:first-child {
+              align-items: stretch;
+            }
+          
+            &__allcolumns:last-child {
+              border-right: none;
+            }
+            &__row1 {
+              &-allcolumns {
+                justify-content: stretch;
+              }
+            }
+          }
+          
+          @media(max-width: 768px) {
+            .statistics {
+              margin-bottom: 62px;
+              &__pc {
+                display: none;
+              }
+              &__mobile {
+                display: flex;
+              }
+              &__title {
+                margin-bottom: 30px;
+                width: 343px;
+                font-size: 24px;
+                line-height: 110%;
+              }
+              //&__allrows {}
+            
+              &__allcolumns {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                //justify-content: center;
+                padding: 18px 0;
+                border: none;
+                &-alltitles {
+                max-width: 90%;
+                margin-bottom: 4px;
+                font-size: 24px;
+                line-height: 28px;
+                  span.gray {      
+                    font-size: 16px;
+                  }
+                }
+                &-text {
+                  text-align: left;
+                  max-width: 90%;
+                  font-size: 14px;
+                  line-height: 16px;
+                  &-column1 {
+                    text-align: left;
+                  }
+                }
+                &-column3 {
+                  display: none;
+                }
+                &-first {
+                  padding-top: 0px;
+                }
+                &-last {
+                  padding-bottom: 0px;
+                }
+              }
+              &__allcolumns:first-child {
+                align-items: stretch;
+              }
+            
+              &__allcolumns:last-child {
+                border-right: none;
+              }
+              &__row1 {
+                &-allcolumns {
+                  justify-content: stretch;
+                }
+              }
+            }
+          }
+          
+          @media(max-width: 360px) {
+            .statistics {
+              &__title {
+                width: 100%;
+              }
+            }
+          }
+           .contact_additional_perfocrepesh{
+            & .contact_title_perfocrepesh{
+                & .text_top{
+                    margin-bottom: 12px;
+                    font-family: Roboto Condensed;
+                    font-style: italic;
+                    font-weight: bold;
+                    font-size: 40px;
+                    margin-bottom: 50px;
+                    line-height: 130%;
+                    text-transform: uppercase;
+                }
+            }
+        }
