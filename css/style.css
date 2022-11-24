@@ -16,8 +16,8 @@ body {
 .header .header_block {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 0.2fr 1.5fr 0.1fr;
-      grid-template-columns: 0.2fr 1.5fr 0.1fr;
+  -ms-grid-columns: 0.1fr 1.5fr 0.1fr;
+      grid-template-columns: 0.1fr 1.5fr 0.1fr;
 }
 
 .header .header_block .links_perfocrepesh .list_of_links_perfocrepesh {
@@ -42,7 +42,7 @@ body {
   background: none;
   border: none;
   color: #000;
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
   color: #140605;
 }
@@ -52,7 +52,7 @@ body {
   background: none;
   border: none;
   color: #000;
-  font-size: 20px;
+  font-size: 18px;
   color: #140605;
 }
 
@@ -78,7 +78,7 @@ body {
   background: none;
   border: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
 }
 
@@ -87,7 +87,7 @@ body {
   background: none;
   border: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .header .header_block .contact_list {
@@ -110,7 +110,7 @@ body {
 }
 
 .header .header_block .contact_list .contact_wrapper li {
-  font-size: 50px;
+  font-size: 25px;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -484,6 +484,10 @@ body {
   text-transform: uppercase;
 }
 
+.perfocrepesh_block {
+  margin-bottom: 50px;
+}
+
 .perfocrepesh_block .title_block {
   font-size: 32px;
   font-weight: bold;
@@ -606,6 +610,54 @@ body {
 
 #carousel #carousel_btn > div:first-child {
   margin-right: 50px;
+}
+
+.landscape .landscape_wrapper {
+  text-align: center;
+}
+
+.landscape .landscape_wrapper .landscape_title .title {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.landscape .landscape_wrapper hr {
+  width: 5%;
+  background: #00ba20;
+  margin-bottom: 30px;
+}
+
+.landscape .landscape_wrapper .landscape_text {
+  text-align: center;
+}
+
+.landscape .landscape_wrapper .landscape_text .text {
+  margin: 0 auto;
+  font-size: 16px;
+  width: 60%;
+  margin-bottom: 50px;
+}
+
+.landscape .landscape_wrapper .landscape_photo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+  margin-bottom: 80px;
+}
+
+.landscape .landscape_wrapper .landscape_photo img {
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.landscape .landscape_wrapper .landscape_photo img:hover {
+  cursor: pointer;
 }
 
 .contact_link {

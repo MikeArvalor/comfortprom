@@ -10,7 +10,7 @@ body{
 .header{ border-bottom: 1px solid rgba(255,255,255,0.4);
     & .header_block{
         display: grid;
-        grid-template-columns: 0.2fr 1.5fr 0.1fr;
+        grid-template-columns: 0.1fr 1.5fr 0.1fr;
         & .links_perfocrepesh{
             & .list_of_links_perfocrepesh{
                 margin-top: 40px;
@@ -23,7 +23,7 @@ body{
                     background: none;
                     border: none;
                     color: #000;
-                    font-size: 20px;
+                    font-size: 18px;
                     text-decoration: none;
                
                     color: #140605;
@@ -33,7 +33,7 @@ body{
                         background: none;
                         border: none;
                         color: #000;
-                        font-size: 20px;
+                        font-size: 18px;
                         
                         color: #140605;
                     }
@@ -52,7 +52,7 @@ body{
                     background: none;
                     border: none;
                     color: #fff;
-                    font-size: 20px;
+                    font-size: 18px;
                     text-decoration: none;
                    }
                     & button{
@@ -60,7 +60,7 @@ body{
                         background: none;
                         border: none;
                         color: #fff;
-                        font-size: 20px;
+                        font-size: 18px;
                     }
                 }
             }
@@ -73,7 +73,7 @@ body{
                 align-items: center;
                 justify-content: center;
                 & li{
-                    font-size: 50px;
+                    font-size: 25px;
                     text-align: center;
                     justify-content: center;
                     letter-spacing: 30px;
