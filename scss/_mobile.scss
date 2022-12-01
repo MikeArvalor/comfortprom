@@ -1,5 +1,88 @@
+@media (max-width:1199px){
+    .links_perfocrepesh.active {
+        position: fixed;
+        overflow-x: auto;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 60%;
+        padding: 60px 24px 32px 24px;
+        background: #F7F4F0;
+        display: flex;
+        flex-direction: column;
+    }
+    .header .header_block .links_perfocrepesh .list_of_links_perfocrepesh{
+        display: block;
+        line-height: 50px;
+        margin: 0 auto;
+    }
+    .header_block{
+       grid-template-columns: 1fr 0.1fr !important;
+    }
+    .links_perfocrepesh{
+        display: none;
+    }
+    .contact_list{
+        display: none !important;
+    }
+    .header__burger {
+        display: block;
+        width: 36px;
+        height: 24px;
+        z-index: 2;
+        margin: auto;
+        float: right;
+        text-align: right;
+        position: relative;
+        &::after,
+        &::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background: #140605;
+            left: 0;
+        }
+        &::before{
+            top: 0;
+        }
+        &::after{
+            bottom: 0;
+        }
+        & span{
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background: #140605;
+            left: 0;
+            top: 10px;
+        }
+    }
+    .header__burger.active{
+        &::before{
+            opacity: 0;
+            visibility: hidden;
+        }
+        &::after{
+            transition: all 0.3s ease-in-out;
+            transform: rotate(45deg);
+            top: 10px;
+        }
+        & span{
+            transition: all 0.3s ease-in-out;
+            transform: rotate(-45deg);
+            bottom: 0;
+        }
+    }
+}
+
+@media (max-width:1025px){
+    .landscape .landscape_wrapper .landscape_photo{
+        grid-template-columns: 1fr 1fr;
+    }
+}
 @media (max-width:991px){
-  
     .wrapper{
         & .wrapper_additional{
             & .block_of_info{
@@ -23,7 +106,7 @@
 @media (max-width:910px){
     .header{
         & .header_block{
-            grid-template-columns: 0.5fr 1fr 1fr;
+            
         }
     }
    .wrapper{
@@ -72,6 +155,8 @@
 }
 }
 @media (max-width:426px){
+            
+   
   .wrapper{
     & .wrapper_additional{
         & .block_of_info{

@@ -7,5 +7,17 @@ service_button.onclick = function(){
 close.onclick=function(){
     form.style.display = "none"
 }
+let headerBurger = document.querySelector('.header__burger');
+let headerMenu = document.querySelector('.links_perfocrepesh');
+
+
+    headerBurger.addEventListener('click', showMenu);
+
+    function showMenu(){
+        headerBurger.classList.toggle('active');
+        headerMenu.classList.toggle('active');
+        document.body.style.overflow = 'hidden';
+    };
+
 
  

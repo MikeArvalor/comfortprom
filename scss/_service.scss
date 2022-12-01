@@ -1,7 +1,6 @@
 .contact_link{
     display: flex;
     margin-top: 10px;
-  
     & p{
         font-size: 16px;
         color: #A09999;
@@ -11,28 +10,26 @@
             font-size: 16px;
             border-bottom: 1px solid #594E4B;
         }
-
     }
     & span{
         margin-top: 15px;
-
     }
-   
 }
-.service_block{
+.service_block{ 
+    margin-bottom: 30px;
     & .service_wrapper{
         & .wrapper{
             & .title_block{
                 font-weight: bold;
-                font-size: 32px;
+                font-size: 36px;
+                margin-top: 10px;
             }
             & .line{
                 border: none;
                 width: 5%;
                 border-radius: 20px;
-                
-                               background-color: #00ba20;; 
-                  color: #00ba20;; 
+                background-color: #00ba20;; 
+                color: #00ba20;; 
                 height: 4px; 
 
             }
@@ -48,3 +45,63 @@
         }
     }
 }
+.wrapper{
+    & .content{
+        margin-bottom: 50px;
+ 
+        & .card{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 30px;
+            grid-row-gap: 30px;
+            & .card_block{
+                background: url(../img/service_2.jpg) no-repeat center center;
+                background-size:cover ;
+                height: 276px;
+                border-radius: 10px;
+                box-shadow: 10px 5px 5px rgba(0,0,0,0.2);
+                & .img_back{
+                 display: flex;
+                 height: 100%;
+                 width: 100%;
+                 border-radius: 15px;
+                 background: linear-gradient(180deg, rgba(35, 22, 21, 0) 57.62%, rgba(35, 22, 21, 0.9) 100%), linear-gradient(0deg, rgba(35, 22, 21, 0.3), rgba(35, 22, 21, 0.3));
+                }
+                & p{
+                    align-self: flex-end;
+                    display: flex;
+                    color: #fff;
+                    padding: 0 0 0 16px ;
+                    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2 );
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+                & img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:991px){
+    .wrapper .content .card{
+        grid-template-columns: 1fr 1fr;
+    }
+   
+}
+@media (max-width:768px){
+    .wrapper .content .card{
+        grid-template-columns: 1fr;
+    }
+    .wrapper .content .card .card_block{
+        background: url(img/service_2.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+   
+}
+
+
+

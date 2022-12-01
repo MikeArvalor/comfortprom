@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
     <link rel="stylesheet" href="fontawesome-free/css/font-awesome.min.css">
+     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Услуги по металлообработке</title>
     <link rel="shortcut icon" href="favicon.png" type="img/x-icon">
-    <meta name="description" content="Наша компания предлагает услуги металлообработки, большой парк станков, самые низкие цены, сварка черного металла и нержавейки, лазер, детали любой формы и размеров, размотка рулонной стали и отрез листов, координатно-пробивной пресс с ЧПУ, нарезка листов гильотиной, гибка металлических изделий и прочие услуги">
-    <meta name="keywords" content="сварка,сварка черного металла, лазер,детали любой формы, размотка рулонной стали и отрез листов, координатно-пробивной пресс с ЧПУ, нарезка листов гильотиной, гибка металлических деталей, услуги по металлообработке, работа с металлом, сварка металла, услуги металлообработки ">
+    <meta name="description" content="Производство изделий из металла и дерева. Металлообработка и деревообработка">
+    <meta name="keywords" content="comfortprom, услуги по металлообработке, услуги по деревообработке, металлообработка, деревообработка, сварка, сварка черного металла, лазерная резка,размотка рулонной стали, координатно-пробивной пресс, нарезка листов гильотиной, гибка металлический изделий, строгание, строгать, торцевание, фрезеровка, фрезерование, покраска, полимерное покрытие">
 </head>
 <body style="background: #FDFCFB; ">
     <header style="border-bottom: 1px solid #dad5d3;">
@@ -20,22 +22,27 @@
                     <div class="logo">
                         <a href="index.html"><img src="img/comfortprom_logo.png"></a>
                     </div>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
                     <div class="links_perfocrepesh">
                         <ul class="list_of_links_perfocrepesh">
                             <li><button><a href="service.html">Услуги</a></button></li>
                             <li><button id="ready_product">Готовые изделия</button></li>
                             <li><button><a href="perfocrepesh.html">Перфорированный лист</a></button></li>
                             <li><button><a href="design.html">Ландшафтный дизайн</a></button></li>
-                            <li><button><a href="https://udachi.by/">Партнеры</a></button></li>
+                            <li><button><a href="https://udachi.by/" target="_blank">Партнеры</a></button></li>
                             <li><button><a href="contact.html">Контакты</a></button></li>
                         </ul>
                     </div>
                     <div class="contact_list">
                         <ul class="contact_wrapper">
-                            <li><a href="viber://chat?number=%2B375336803736"><i class="fab fa-viber"></i></a></li>
-                            <li><a href="https://t.me/udachiby"><i class="fab fa-telegram"></i></a></li>
-                            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                            <li><a href="viber://chat?number=%2B375296300117"><i class="fab fa-viber"></i></a></li>
+                            <li><a href="https://t.me/+375296300117"><i class="fab fa-telegram"></i></a></li>
+                            <li><a href="https://wa.me/375296300117"><i class="fab fa-whatsapp"></i></a></li>
+                            
                         </ul>
+                       
                     </div>
                 </div>
             </div>
@@ -46,7 +53,7 @@
             <div class="container">
                 <div class="contact_wrapper">
                     <div class="contact_link">
-                        <p><a href="">Главная </a>  <span>></span> Контакты</p>
+                        <p><a href="index.html">Главная </a>  <span>></span> Контакты</p>
                     </div>
                     <div class="contact_additional">
                         <div class="contact_title">
@@ -55,7 +62,7 @@
                     </div>
                     <div class="wrapper">
                         <div class="card_contact">
-                            <p class="title">Сотрудничество</p>
+                            <!-- <p class="title">Сотрудничеств</p> -->
                             <p class="name">Леонид</p>
                             <ul class="contact">
                                 <li>Телефон: <span>+375296300117</span></li>
@@ -65,9 +72,12 @@
                         <div class="card_contact">
                             <p class="title">Связаться с нами</p>
                             
-                            <div class="input_button">
-                                <input class="inpt" type="text" placeholder="Введите номер телефона" required>
-                                <button class="btn">Отправить</button>
+                            <div >
+                                <form class="input_button" method="post" action="/send_zakaz.php">
+                                           <input class="inpt" type="text"id="phone1" name="phone" placeholder="Введите номер телефона" required>
+                                   <button class="btn" id="myBtn">Отправить</button>
+                                    <input type="hidden" name="act" value="order">
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -80,44 +90,44 @@
             <div class="modal_wrapper" id="modal_wrapp" style="position: relative;" >
                 <form class="modal_form">
                     <div class="top_block">
-                        <label class="modal_form_label">Наши изделия(доработать)</label>
+                        <label class="modal_form_label">Наши изделия</label>
                         <span class="close_modal">&times;</span>
                     </div>
                     <div class="modal_form_wrapper">
                         <div class="card">
                             <p class="text_under_photo">Отопительные печи</p>
                             <div class="img-wrap">
-                                <img src="img/pechka.jpg" >
+                                <a href="https://udachi.by/печи-отопительные/pechi-otopitelnye/" target="_blank"><img src="img/otopit_pechi.jpg" ></a>
                             </div>
-                            <a href="https://udachi.by/besedki/" class="text_bottom">Посмотреть</a>
+                            <a href="https://udachi.by/печи-отопительные/pechi-otopitelnye/" target="_blank" class="text_bottom">Посмотреть</a>
                         </div>
                         <div class="card">
                             <p class="text_under_photo">Печи для бани</p>
                             <div class="img-wrap">
-                                <img src="img/pechka.jpg">
+                                <a href="https://udachi.by/pechi/" target="_blank"><img src="img/pechka.jpg"></a>
                             </div>
-                            <a href="https://udachi.by/besedki/" class="text_bottom">Посмотреть</a>
+                            <a href="https://udachi.by/pechi/" target="_blank" class="text_bottom">Посмотреть</a>
                         </div>
                         <div class="card">
                             <p class="text_under_photo">Теплицы</p>
                             <div class="img-wrap">
-                                <img src="img/teplica.jpg">
+                                <a href="https://udachi.by/teplitsy-iz-polikarbonata/" target="_blank"><img src="img/teplica.jpg"></a>
                             </div>
-                            <a href="https://udachi.by/besedki/" class="text_bottom">Посмотреть</a>
+                            <a href="https://udachi.by/teplitsy-iz-polikarbonata/" target="_blank" class="text_bottom">Посмотреть</a>
                         </div>
                         <div class="card">
                             <p class="text_under_photo">Беседки</p>
                             <div class="img-wrap">
-                                <img src="img/besedka.jpg">
+                                <a href="https://udachi.by/besedki/" target="_blank"><img src="img/besedka.jpg"></a>
                             </div>
-                            <a href="https://udachi.by/besedki/" class="text_bottom">Посмотреть</a>
+                            <a href="https://udachi.by/besedki/" target="_blank" class="text_bottom">Посмотреть</a>
                         </div>
                          <div class="card">
                             <p class="text_under_photo">Садовая мебель</p>
                             <div class="img-wrap">
-                                <img src="img/creslo.png">
+                                <a href="https://udachi.by/sadovaya-mebel/" target="_blank"><img src="img/creslo.png"></a>
                             </div>
-                            <a href="https://udachi.by/besedki/" class="text_bottom">Посмотреть</a>
+                            <a href="https://udachi.by/sadovaya-mebel/" target="_blank" class="text_bottom">Посмотреть</a>
                         </div>
                     </div>
                 </form>
